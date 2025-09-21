@@ -5,7 +5,7 @@ Conteúdo abordado na unidade curricular Sistemas Distribuídos no ano letivo 20
 ## Conteúdo
 
 Neste repositório poderás encontrar o seguinte conteúdo:
-- resolução das [fichas](fichas/) práticas
+- resolução de [guioes](guioes/) práticos
 - resolução de [testes](testes/) e exames de anos anteriores
 - [slides](slides/) com a matéria abordada na cadeira
 - enunciados de [trabalhos](trabalhos/) práticos de vários anos
