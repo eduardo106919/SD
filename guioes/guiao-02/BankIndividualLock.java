@@ -98,16 +98,17 @@ public class BankIndividualLock implements Bank {
     // total balance
     public int totalBalance() {
         int sum = 0;
-        try {
-            for (int i = 0; i < slots; i++) {
-                accounts[i].l.lock();
-                sum += accounts[i].balance();
-                accounts[i].l.unlock();
-            }
-            return sum;
-        } finally {
 
+        for (int i = 0; i < slots; i++) {
+            accounts[i].l.lock();
         }
+
+        for (int i = 0; i < slots; i++) {
+            sum += accounts[i].balance();
+            accounts[i].l.unlock();
+        }
+
+        return sum;
     }
 
 }
