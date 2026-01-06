@@ -36,7 +36,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         int N = 16;
-        Jogo j = new JogoFacade();
+        Jogo j = new Jogo();
 
         Thread[] threads = new Thread[N];
         for (int i = 0; i < 4; i++) {
@@ -45,6 +45,7 @@ public class Main {
             Thread.sleep(1000);
         }
 
+        /*
         // Thread.sleep(1000 * 120);
 
         for (int i = 4; i < 10; i++) {
@@ -64,7 +65,7 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             threads[i].join();
         }
-
+*/
     }
 
 }
